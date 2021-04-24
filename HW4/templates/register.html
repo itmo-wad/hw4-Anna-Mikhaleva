@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Homework №4. Anna Mikhaleva</title>
+    <link rel="stylesheet" href="static/style4.css">
+  </head>
+
+  <body>
+      <h1>Register</h1>
+        <form class="form" action="" method="post">
+          <table>
+            <tr>
+              <td class="title">
+                <label for="login">Login:</label>
+              </td>
+              <td class="field">
+                <input type="text" id="login" name="username" placeholder="Create your login">
+              </td>
+            </tr>
+            <tr>
+            </tr>
+            <tr>
+            </tr>
+            <tr>
+              <td class="title">
+                <label for="pass">Password:</label>
+              </td>
+              <td class="field">
+                <textarea id="pass" name="password" placeholder="Create your password"></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td class="title"></td>
+              <td class="field">
+                <input type="submit" class="btn" value="Sign up">
+              </td>
+            </tr>
+          </table>
+        </form>
+        <p class="url"><a href="{{ url_for('login') }}">Authorization</a></p>
+        <p class="pic"> <img src="static/bayern.jpg"  alt="Bayern" width="576px"></p>
+  </body>
+</html>
