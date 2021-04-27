@@ -19,7 +19,7 @@ class User(UserMixin):
 
 @login_manager.user_loader
 def load_user(username):
-    user = mongo.db.users.find_one({})
+    user = mongo.db.users.find_one({'login': username})
     return User(username=user['login'], password=user['password'])
 
 @app.route('/', methods=['GET', 'POST'])
